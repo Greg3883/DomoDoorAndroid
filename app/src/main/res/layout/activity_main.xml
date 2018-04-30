@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.elbejaj.domoapp.MainActivity">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:text="DOMODOOR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/titre" />
+
+
+        <Button
+            android:text="OUVRIR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bouton_ouvrir" />
+
+        <Button
+            android:text="FERMER"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bouton_fermer"
+            android:layout_gravity="top|left" />
+
+        <Button
+            android:text="STOPPER"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bouton_stopper"
+            android:layout_gravity="top|left" />
+
+
+        <Button
+            android:text="REPRENDRE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bouton_reprendre"
+            android:layout_gravity="top|left" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:text="Entre l'adresse MAC"
+            android:ems="10"
+            android:id="@+id/MacAdresse" />
+
+        <Button
+            android:text="CONNECTER !"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bouton_connection"
+            android:layout_gravity="top|left" />
+
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
