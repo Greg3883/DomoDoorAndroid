@@ -130,7 +130,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void envoyerAction(byte msg) throws InterruptedException, IOException {
-        //TTESnn
+        //TTE
                 out.write(msg);
                 out.flush();
                 Thread.sleep(1000);
