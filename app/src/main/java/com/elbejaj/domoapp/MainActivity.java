@@ -92,6 +92,63 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        boutonFermer.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                switch (event.getAction()){
+                    case MotionEvent.ACTION_DOWN:
+                        try {
+                            envoyerAction((byte) 2);
+                            return true;
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                            return false;
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                }
+                return false;
+            }
+        });
+
+        boutonStopper.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                switch (event.getAction()){
+                    case MotionEvent.ACTION_DOWN:
+                        try {
+                            envoyerAction((byte) 3);
+                            return true;
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                            return false;
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                }
+                return false;
+            }
+        });
+
+        boutonReprendre.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                switch (event.getAction()){
+                    case MotionEvent.ACTION_DOWN:
+                        try {
+                            envoyerAction((byte) 4);
+                            return true;
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                            return false;
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                }
+                return false;
+            }
+        });
+
     }
 
     public void setMacAdress(String adresse){
